@@ -44,3 +44,35 @@
 
 마지막 커밋 취소: 방금 남긴 커밋을 취소하되, 작업했던 파일의 변경 내용은 그대로 유지합니다.
 `git reset HEAD~1`
+
+###example
+# 1. 홈 디렉토리(~)로 이동 후 command라는 새 폴더를 만들고 들어갑니다.
+cd ~
+mkdir command
+cd command
+
+# 2. foresight 폴더에 만들어둔 git_commands.md 파일을 이곳으로 복사해옵니다.
+cp ~/foresight/git_commands.md .
+
+# 3. 이 폴더를 완전히 독립된 새로운 Git 저장소로 초기화하고 파일을 담습니다.
+git init
+git add git_commands.md
+git commit -m "Git 필수 명령어 모음집 추가"
+
+# 4. 브랜치 이름을 main으로 바꾸고, 새로 만든 command 저장소 주소를 연결합니다.
+# (본인의 GitHub 아이디와 저장소 이름이 맞는지 확인하세요!)
+git branch -M main
+git remote add origin https://github.com/Leetg-debug/command.git
+
+# 5. 최종적으로 GitHub에 업로드합니다.
+git push -u origin main
+
+# 6. 현재 장바구니(add)에 담긴 파일들을 일단 전부 뺍니다.
+git reset
+
+# 7. 딱 git_commands.md 파일 하나만 다시 장바구니에 담습니다.
+git add git_commands.md
+
+# 8. 커밋 후 업로드합니다.
+git commit -m "Git 명령어 모음집 파일 추가"
+git push

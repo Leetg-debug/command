@@ -1,0 +1,19 @@
+{
+  "model": "new_fall_student",
+  "checkpoint": "/home/tg/extreme-parkour/legged_gym/logs/parkour_new/new_fall_student/model_9500.pt",
+  "checkpoint_sha256": "4ac18515598e86335fce3cfb672d51744f72f068d3db49cc40a60e5d19510900",
+  "exporter": "/home/tg/simdeploy/deploy/tools/export_parkour.py",
+  "exporter_sha256": "919583364f2afa591deb591133627efe0917d8da5281a7e3faf115a031b502ae",
+  "files_sha256": {
+    "actor.onnx": "efcd87a7b5fa7eea06b41ad8802264bb41d295468d28562dcc937d710ad459c3",
+    "vision.onnx": "3cffc735b83b24a79313d986db138e760e93f1e4f74556bdf46298eee573407e",
+    "metadata.json": "c3c27e9227dc630bc56075d9aa2f6896035bb4123ec7d8a0373b49525c3510c9"
+  },
+  "parity_max_abs_error": {
+    "depth_latent": 4.127621650695801e-06,
+    "yaw": 1.862645149230957e-06,
+    "hidden": 1.370161771774292e-05,
+    "actions": 6.67572021484375e-06,
+    "source_actor": 0.0
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "model": "advh5_student_seed1_20261016",
+  "checkpoint": "/home/tg/extreme-parkour/legged_gym/logs/parkour_new/advh5_student_seed1_20261016/model_9500.pt",
+  "checkpoint_sha256": "920191657f564adfa3d0efb9a3ae6c5f9dcdce99d7cc0dec029a21874123bcab",
+  "exporter": "/home/tg/simdeploy/deploy/tools/export_parkour.py",
+  "exporter_sha256": "919583364f2afa591deb591133627efe0917d8da5281a7e3faf115a031b502ae",
+  "files_sha256": {
+    "actor.onnx": "b8b1b1ed4026efdfe4b555f1790e333e822d9c63f0b112a8061b4a3cf68159fd",
+    "vision.onnx": "a1817a272825379d36d2253d13cd607ef4fdb885f67a7aeb968202e91bc007cd",
+    "metadata.json": "ebd407f4ae2a11e0378eb454fe5c70c77421ba7a0fa2f665c6361b2c3803a2ed"
+  },
+  "parity_max_abs_error": {
+    "depth_latent": 6.15045428276062e-06,
+    "yaw": 1.1920928955078125e-06,
+    "hidden": 9.059906005859375e-06,
+    "actions": 1.0251998901367188e-05,
+    "source_actor": 0.0
+  }
+}
